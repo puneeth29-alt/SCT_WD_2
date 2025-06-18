@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link id="theme-style" rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch Web App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">⏱ Stopwatch App</header>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <button onclick="toggleTheme()">Switch Theme</button>
+  </nav>
+  <main class="stopwatch-container">
+    <div class="stopwatch">
+      <div class="time" id="display">00:00:00</div>
+      <div class="controls">
+        <button onclick="startStopwatch()">Start</button>
+        <button onclick="pauseStopwatch()">Pause</button>
+        <button onclick="resetStopwatch()">Reset</button>
+        <button onclick="lapTime()">Lap</button>
+      </div>
+      <div class="lap-times" id="laps"></div>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+  Made by <a href="https://github.com/puneeth29-alt" target="_blank" style="color: inherit; text-decoration: underline;">puneeth</a> | Stopwatch Web App
+</footer>
+
+  <script src="script.js"></script> 
+  <script src="switch-theme.js"></script>
+</body>
+</html>
